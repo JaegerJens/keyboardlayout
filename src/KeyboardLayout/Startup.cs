@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.AspNet.Http;
+using Microsoft.AspNet.StaticFiles;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace KeyboardLayout
@@ -21,6 +22,8 @@ namespace KeyboardLayout
         public void Configure(IApplicationBuilder app)
         {
             app.UseIISPlatformHandler();
+            app.UseStaticFiles();
+            app.UseDirectoryBrowser();
 
             app.Run(async (context) =>
             {
