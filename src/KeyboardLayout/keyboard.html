@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Keyboard Layout</title>
+    <style>
+        .key {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: solid 1px black;
+            padding: 2px;
+            margin: 2px;
+            overflow: hidden;
+        }
+        .group {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .middlegroup {
+            position: fixed;
+            left: 550px;
+        }
+        .numbergroup {
+            position: fixed;
+            left: 700px;
+        }
+        .smalltext {
+            font-size: smaller;
+        }
+        #row1 {
+            margin-bottom: 40px;
+        }
+        #row2, #row3, #row4, #row5, #row6 {
+            margin-top: 20px;
+        }
+        #spacekey {
+            padding-left:205px;
+        }
+        #delkey {
+            width: 40px;
+        }
+        #tabkey {
+            width: 30px;
+        }
+        #capslock {
+            width: 40px;
+        }
+        #middleUpArrow {
+            margin-left: 36px;
+        }
+        #num0 {
+            width: 55px;
+        }
+    </style>
+</head>
+<body>
+    <div id="keyboard">
+        <div id="row1">
+            <span class="key smalltext">Esc</span>
+            <span class="group">
+                <span class="key">F1</span>
+                <span class="key">F2</span>
+                <span class="key">F3</span>
+                <span class="key">F4</span>
+            </span>
+            <span class="group">
+                <span class="key">F5</span>
+                <span class="key">F6</span>
+                <span class="key">F7</span>
+                <span class="key">F8</span>
+            </span>
+            <span class="group">
+                <span class="key">F9</span>
+                <span class="key">F10</span>
+                <span class="key">F11</span>
+                <span class="key">F12</span>
+            </span>
+            <span class="group middlegroup">
+                <span class="key smalltext">Druck</span>
+                <span class="key smalltext">Rollen</span>
+                <span class="key smalltext">Pause</span>
+            </span>
+        </div>
+        <div id="row2">
+            <span class="key">^</span>
+            <span class="key">1</span>
+            <span class="key">2</span>
+            <span class="key">3</span>
+            <span class="key">4</span>
+            <span class="key">5</span>
+            <span class="key">6</span>
+            <span class="key">7</span>
+            <span class="key">8</span>
+            <span class="key">9</span>
+            <span class="key">0</span>
+            <span class="key">ß</span>
+            <span class="key">´</span>
+            <span class="key" id="delkey">&larr;</span>
+            <span class="group middlegroup">
+                <span class="key smalltext">Einfg</span>
+                <span class="key smalltext">Pos1</span>
+                <span class="key smalltext">Bild &uarr;</span>
+            </span>
+            <span class="group numbergroup">
+                <span class="key smalltext">Num</span>
+                <span class="key">/</span>
+                <span class="key">*</span>
+                <span class="key">-</span>
+            </span>
+        </div>
+        <div id="row3">
+            <span class="key" id="tabkey">&rarr;</span>
+            <span class="key">Q</span>
+            <span class="key">W</span>
+            <span class="key">E</span>
+            <span class="key">R</span>
+            <span class="key">T</span>
+            <span class="key">Z</span>
+            <span class="key">U</span>
+            <span class="key">I</span>
+            <span class="key">O</span>
+            <span class="key">P</span>
+            <span class="key">Ü</span>
+            <span class="key">+</span>
+            <span class="key">&crarr;</span>
+            <span class="group middlegroup">
+                <span class="key smalltext">Entf</span>
+                <span class="key smalltext">Ende</span>
+                <span class="key smalltext">Bild &darr;</span>
+            </span>
+            <span class="group numbergroup">
+                <span class="key">7</span>
+                <span class="key">8</span>
+                <span class="key">9</span>
+                <span class="key">+</span>
+            </span>
+        </div>
+        <div id="row4">
+            <span class="key" id="capslock">&dArr;</span>
+            <span class="key">A</span>
+            <span class="key">S</span>
+            <span class="key">D</span>
+            <span class="key">F</span>
+            <span class="key">G</span>
+            <span class="key">H</span>
+            <span class="key">J</span>
+            <span class="key">K</span>
+            <span class="key">L</span>
+            <span class="key">Ö</span>
+            <span class="key">Ä</span>
+            <span class="key">#</span>
+            <span class="group numbergroup">
+                <span class="key">4</span>
+                <span class="key">5</span>
+                <span class="key">6</span>
+            </span>
+        </div>
+        <div id="row5">
+            <span class="key">&uArr;</span>
+            <span class="key">&lt;</span>
+            <span class="key">Y</span>
+            <span class="key">X</span>
+            <span class="key">C</span>
+            <span class="key">V</span>
+            <span class="key">B</span>
+            <span class="key">N</span>
+            <span class="key">M</span>
+            <span class="key">,</span>
+            <span class="key">.</span>
+            <span class="key">-</span>
+            <span class="key">&uArr;</span>
+            <span class="group middlegroup">
+                <span class="key" id="middleUpArrow">&uarr;</span>
+            </span>
+            <span class="group numbergroup">
+                <span class="key">1</span>
+                <span class="key">2</span>
+                <span class="key">3</span>
+                <span class="key smalltext">Enter</span>
+            </span>
+        </div>
+        <div id="row6">
+            <span class="key smalltext">Strg</span>
+            <span class="key">&#10070;</span>
+            <span class="key smalltext">Alt</span>
+            <span class="key" id="spacekey">&nbsp;</span>
+            <span class="key smalltext">Alt Gr</span>
+            <span class="key">&#10070;</span>
+            <span class="key">&#9776;</span>
+            <span class="key smalltext">Strg</span>
+            <span class="group middlegroup">
+                <span class="key">&larr;</span>
+                <span class="key">&darr;</span>
+                <span class="key">&rarr;</span>
+            </span>
+            <span class="group numbergroup">
+                <span class="key" id="num0">0</span>
+                <span class="key">,</span>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
