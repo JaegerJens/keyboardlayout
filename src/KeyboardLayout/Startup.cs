@@ -22,6 +22,10 @@ namespace KeyboardLayout
         public void Configure(IApplicationBuilder app)
         {
             app.UseIISPlatformHandler();
+            app.UseDefaultFiles(new DefaultFilesOptions
+            {
+                DefaultFileNames = new List<string> { "keyboard.html" }
+            });
             app.UseStaticFiles();
             app.UseDirectoryBrowser();
 
